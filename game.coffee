@@ -60,7 +60,7 @@ class Point
     @x     = x
     @y     = y
     @live  = live
-    @board = board  # 引用board，一是为了获得画布边界，而是为了获得points集合
+    @board = board  # 引用board，一是为了获得画布边界，二是为了获得points集合
 
   render: ->
     canvas.draw(col: @x, row: @y, live: @live)
